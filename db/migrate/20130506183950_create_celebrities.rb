@@ -1,4 +1,4 @@
-lass CreateCelebrities < ActiveRecord::Migration
+class CreateCelebrities < ActiveRecord::Migration
   def change
     create_table :celebrities do |t|
 
