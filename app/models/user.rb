@@ -1,11 +1,8 @@
 class User < ActiveRecord::Base
   has_many :posts
   has_many :albums
-	#has_many :medias
+  has_many :medias, :through => :albums
 
   attr_accessible :name
-
-  def medias
-  	Media.where(:user_id => :id)
-  end
+  
 end

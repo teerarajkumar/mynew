@@ -37,7 +37,6 @@ ActiveRecord::Schema.define(:version => 20130513174839) do
 
   create_table "medias", :force => true do |t|
     t.integer  "album_id"
-    t.integer  "user_id"
     t.string   "location"
     t.string   "caption"
     t.string   "file_type"
