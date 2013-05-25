@@ -1,7 +1,6 @@
 class Fan < User
   # attr_accessible :title, :body
   attr_accessible :name
-
   def followings
     Following.find_all_by_fan_id(self)
   end
